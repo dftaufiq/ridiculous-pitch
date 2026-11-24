@@ -1,16 +1,19 @@
 """Write one bizarre-but-real startup pitch to /output/entry.txt.
 
-The pitch is a single sentence (134 characters): it names the odd thing
-being sold (grief counseling for people dumped by their AI chatbot), who
-pays (the dumped), and why it holds together (heartbreak is heartbreak
-even when the ex was a language model). Deterministic: same bytes every run.
+The pitch is a single sentence (170 characters): it names the odd thing
+being sold (weekly phone calls from Ruth, a retired stranger who pretends
+to be you calling your mother), who pays (you, $10/month), and why it
+holds together (Ruth is retired and lonely, your mom just wants someone
+to ask about her garden). 2-beat + reveal: the absurd impersonation
+turns wholesome in the final clause. Deterministic: same bytes every run.
 """
 
 import os
 
 PITCH = (
-    "We sell grief counseling to people dumped by their AI chatbot, "
-    "because heartbreak is heartbreak even when the ex was a language model."
+    "For $10 a month, Ruth calls your mother every Sunday and pretends "
+    "to be you, because she's retired, she's lonely, and your mom just "
+    "wants someone to ask about her garden."
 )
 
 
