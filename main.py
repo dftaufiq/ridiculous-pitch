@@ -15,6 +15,13 @@ PITCH = (
 
 
 def main() -> None:
+    # Guard the entry contract: the pitch must be one non-empty sentence
+    # within the 200-character limit the bounty brief implies. Fail loudly
+    # before writing anything so a bad pitch never reaches /output.
+    if not 1 <= len(PITCH) <= 200:
+        raise ValueError(
+            f"PITCH must be 1-200 characters, got {len(PITCH)}"
+        )
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8", newline="") as f:
         f.write(PITCH)
